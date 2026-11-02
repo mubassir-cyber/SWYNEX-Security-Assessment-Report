@@ -87,44 +87,35 @@ Full details for each finding (affected asset, description, impact, evidence, re
 
 ## 📸 Evidence Screenshots
 
-All screenshots are sanitized. Tokens, passwords, cookies, MAC addresses and personal IPv6 addresses are redacted.
+All screenshots are sanitized. Tokens, passwords, cookies, MAC addresses and personal IPv6 addresses are redacted. Click any thumbnail to view it full size.
 
 **Reconnaissance**
 
-![Nmap service scan](evidence/recon-01-nmap-service-scan.png)
-![HTTP headers and Nikto start](evidence/recon-02-http-headers-and-nikto-start.png)
-![Nikto results](evidence/recon-03-nikto-results-a.png)
-![Nikto results continued](evidence/recon-04-nikto-results-b.png)
+<table>
+<tr><td align="center"><a href="evidence/recon-01-nmap-service-scan.png"><img src="evidence/recon-01-nmap-service-scan.png" width="320" alt="Nmap service scan"></a><br><sub>Nmap service scan</sub></td><td align="center"><a href="evidence/recon-02-http-headers-and-nikto-start.png"><img src="evidence/recon-02-http-headers-and-nikto-start.png" width="320" alt="HTTP headers and Nikto start"></a><br><sub>HTTP headers and Nikto start</sub></td></tr>
+<tr><td align="center"><a href="evidence/recon-03-nikto-results-a.png"><img src="evidence/recon-03-nikto-results-a.png" width="320" alt="Nikto results (1)"></a><br><sub>Nikto results (1)</sub></td><td align="center"><a href="evidence/recon-04-nikto-results-b.png"><img src="evidence/recon-04-nikto-results-b.png" width="320" alt="Nikto results (2)"></a><br><sub>Nikto results (2)</sub></td></tr>
+</table>
 
 **F1: SQL Injection (Authentication Bypass)**
 
-![SQLi payload in login form](evidence/f1-sqli-01-login-payload.png)
-![Burp Suite capture (redacted)](evidence/f1-sqli-02-burp-capture-redacted.png)
-![Admin login confirmed](evidence/f1-sqli-03-admin-login-confirmed.png)
+<table>
+<tr><td align="center"><a href="evidence/f1-sqli-01-login-payload.png"><img src="evidence/f1-sqli-01-login-payload.png" width="320" alt="Payload in login form"></a><br><sub>Payload in login form</sub></td><td align="center"><a href="evidence/f1-sqli-02-burp-capture-redacted.png"><img src="evidence/f1-sqli-02-burp-capture-redacted.png" width="320" alt="Burp capture (redacted)"></a><br><sub>Burp capture (redacted)</sub></td></tr>
+<tr><td align="center"><a href="evidence/f1-sqli-03-admin-login-confirmed.png"><img src="evidence/f1-sqli-03-admin-login-confirmed.png" width="320" alt="Admin login confirmed"></a><br><sub>Admin login confirmed</sub></td></tr>
+</table>
 
-**F2: Sensitive File Exposure**
+**F2 to F4: File Exposure, Cleartext Credentials, Port Scan**
 
-![/ftp directory listing](evidence/f2-ftp-directory-exposure.png)
+<table>
+<tr><td align="center"><a href="evidence/f2-ftp-directory-exposure.png"><img src="evidence/f2-ftp-directory-exposure.png" width="320" alt="F2: /ftp listing"></a><br><sub>F2: /ftp listing</sub></td><td align="center"><a href="evidence/f3-cleartext-credentials-redacted.png"><img src="evidence/f3-cleartext-credentials-redacted.png" width="320" alt="F3: Cleartext (redacted)"></a><br><sub>F3: Cleartext (redacted)</sub></td></tr>
+<tr><td align="center"><a href="evidence/f4-port-scan-pattern.png"><img src="evidence/f4-port-scan-pattern.png" width="320" alt="F4: SYN scan pattern"></a><br><sub>F4: SYN scan pattern</sub></td></tr>
+</table>
 
-**F3: Cleartext Credentials (values redacted)**
+**F5, F6, F8: XSS, DNS, Protocol Hierarchy**
 
-![Follow TCP Stream](evidence/f3-cleartext-credentials-redacted.png)
-
-**F4: TCP SYN Port Scan Pattern**
-
-![Port scan pattern](evidence/f4-port-scan-pattern.png)
-
-**F5: Cross-Site Scripting**
-
-![XSS alert](evidence/f5-xss-search-alert.png)
-
-**F6: DNS Queries (addresses redacted)**
-
-![DNS queries](evidence/f6-dns-queries-redacted.png)
-
-**F8: Protocol Hierarchy**
-
-![Protocol hierarchy](evidence/f8-protocol-hierarchy.png)
+<table>
+<tr><td align="center"><a href="evidence/f5-xss-search-alert.png"><img src="evidence/f5-xss-search-alert.png" width="320" alt="F5: XSS alert"></a><br><sub>F5: XSS alert</sub></td><td align="center"><a href="evidence/f6-dns-queries-redacted.png"><img src="evidence/f6-dns-queries-redacted.png" width="320" alt="F6: DNS (redacted)"></a><br><sub>F6: DNS (redacted)</sub></td></tr>
+<tr><td align="center"><a href="evidence/f8-protocol-hierarchy.png"><img src="evidence/f8-protocol-hierarchy.png" width="320" alt="F8: Protocol hierarchy"></a><br><sub>F8: Protocol hierarchy</sub></td></tr>
+</table>
 
 ---
 
